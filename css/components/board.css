@@ -1,0 +1,18 @@
+.board-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 8rem);
+  grid-template-rows: repeat(4, 8rem);
+  grid-gap:  24px;
+  background: linear-gradient(to bottom, #3d7dca, #003a70);
+  padding:  24px;
+  border-radius: 24px;
+  perspective: 800px;
+}

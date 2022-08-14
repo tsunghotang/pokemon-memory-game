@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokemon Memory Game</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="board-container">
+      <!-- Modal -->
+      <section>
+        <div id="stats-modal" class="stats-modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <h2>Congratulations!</h2>
+            <p>You have won the game and found all 8 Pokèmon.</p>
+            <img class="result-modal-img" src="./images/54-psyduck.svg" alt="desc of image">
+            <button class="btn btn-primary reload-btn">Play Again?</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-container">
+        <div class="move-counter stat-badge">0</div>
+        <div class="timer stat-badge"><span id="mm">00</span> : <span id="ms">00</span></div>
+        <div class="reset btn btn-primary reset-btn">Reset</div>
+      </section>
+
+        <section class="board"></section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,39 @@
+@import url("./components/board.css");
+@import url("./components/card.css");
+@import url("./components/container.css");
+@import url("./components/badge.css");
+@import url("./components/modal.css");
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+@media (max-width: 768px) {
+  .board {
+    grid-template-columns: repeat(4, 7rem);
+    grid-template-rows: repeat(4, 7rem);
+  }
+ }
+
+@media (max-width: 612.98px) {
+  .board {
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(4, 5rem);
+  }
+ }
+
+@media (max-width: 481.98px) {
+  .board {
+    grid-template-columns: repeat(4, 3.5rem);
+    grid-template-rows: repeat(4, 3.5rem);
+  }
+
+  .face {
+    padding:  8px;
+  }
+ }
