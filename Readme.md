@@ -8,8 +8,11 @@ Simple Pokèmon themeed emory game built with JavaScript
 ```
 yarn install
 ```
-2. Start webpack-dev-server
-`yarn start`
+
+2. Start dev-server
+```
+yarn start
+````
 
 ### Scripts
 To start the local Webpack Dev Server (usually on port `8080`):
@@ -18,16 +21,15 @@ To start the local Webpack Dev Server (usually on port `8080`):
 yarn start
 ```
 
-To lint all JavaScript files in the `src` folder:
+To build production files:
 
 ```bash
-yarn lint
+yarn build
 ```
 
-To build and deploy your app to `gh-pages` branch on the GitHub repo:
-
+To deploy to GitHub Pages:
 ```bash
-yarn deploy
+yarn create-gh-pages
 ```
 
 ## Todo

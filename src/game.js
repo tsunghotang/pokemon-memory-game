@@ -2,6 +2,17 @@ import { shuffle } from './shuffle';
 import { startTimer } from './timer';
 import { initModal } from './modal';
 
+// images
+import pikachu from '../images/25-pikachu.svg';
+import gengar from '../images/94-gengar.svg';
+import electrode from '../images/101-electrode.svg';
+import snorlax from '../images/143-snorlax.svg';
+import dragonite from '../images/149-dragonite.svg';
+import mewtwo from '../images/150-mewtwo.svg';
+import togepi from '../images/175-togepi.svg';
+import wobbuffet from '../images/202-wobbuffet.svg';
+
+
 let intervalId;
 let moveCounter = 0;
 
@@ -18,7 +29,7 @@ const generateBoard = (deck, board) => {
     // Create <img> element
     const imgEl = document.createElement('img');
     // Set the img src path to have the name of the current iteration
-    imgEl.setAttribute("src", `/images/${card}`);
+    imgEl.setAttribute("src", `${card}`);
     // Give imgEl a class of 'face'
     imgEl.classList.add('face');
     // Append <img> to <div>
@@ -139,7 +150,7 @@ const flipCard = () => {
 const initMemoryGame = () => {
   let timeStart = false;
   // Array of images
-  const deck = ["101-electrode.svg", "101-electrode.svg", "143-snorlax.svg", "143-snorlax.svg", "149-dragonite.svg", "149-dragonite.svg", "150-mewtwo.svg", "150-mewtwo.svg", "175-togepi.svg", "175-togepi.svg", "202-wobbuffet.svg", "202-wobbuffet.svg", "25-pikachu.svg", "25-pikachu.svg", "94-gengar.svg", "94-gengar.svg"];
+  const deck = [electrode, electrode, snorlax, snorlax, dragonite, dragonite, mewtwo, mewtwo, togepi, togepi, wobbuffet, wobbuffet, pikachu, pikachu, gengar, gengar];
   // Selectors
   const board = document.querySelector(".board");
   const cards = document.querySelectorAll(".pkm-card");
