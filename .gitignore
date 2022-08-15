@@ -3,3 +3,6 @@ dist
 .DS_Store
 package-lock.json
 yarn-error.log
+node_modules/
+.parcel-cache/
+.env
